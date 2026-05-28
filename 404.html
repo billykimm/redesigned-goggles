@@ -9,14 +9,16 @@
 
   <meta property="og:title" content="Bee Movie">
   <meta property="og:description" content="real">
-  <meta property="og:type" content="video.other">
+  <meta property="og:type" content="website">
 
-  <meta property="og:video" content="https://pixeldrain.com/api/file/TMKwZ7o1?download">
-  <meta property="og:video:type" content="video/mp4">
-  <meta property="og:video:width" content="1280">
-  <meta property="og:video:height" content="720">
+  <!-- Pointing to your local GIF for embeds -->
+  <meta property="og:image" content="Bee Movie 2007 Shared by ShowBox-silent_full_movie.gif">
+  <meta property="og:image:type" content="image/gif">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
 
-  <meta name="twitter:card" content="player">
+  <!-- summary_large_image works best for embedding GIFs on Twitter/Discord -->
+  <meta name="twitter:card" content="summary_large_image">
 
   <style>
     html, body {
@@ -30,6 +32,7 @@
 
     #normalPage {
       display: flex;
+      flex-direction: column; /* Stack text and image vertically */
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -39,14 +42,26 @@
       box-sizing: border-box;
       font-size: 2rem;
     }
+
+    .movie-gif {
+      max-width: 90%;
+      max-height: 50vh;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
 
 <div id="normalPage">
-  SORRY im not showing the full bee moive,<br>
-  only works as a gif,<br>
-  not trying to get DMCA'ed for copyright womp womp
+  <div>
+    SORRY im not showing the full bee moive,<br>
+    only works as a gif,<br>
+    not trying to get DMCA'ed for copyright womp womp
+  </div>
+  
+  <!-- Displaying the GIF on the actual webpage -->
+  <img class="movie-gif" src="Bee Movie 2007 Shared by ShowBox-silent_full_movie.gif" alt="Bee Movie GIF">
 </div>
 
 </body>
